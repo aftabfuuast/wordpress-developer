@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Muhammad Aftab Hussain - WordPress Projects</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .zoom-image {
+      transition: transform 0.3s ease;
+    }
+    .zoom-image:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-indigo-600 py-16 text-center text-white rounded-b-3xl">
+    <h1 class="text-5xl font-bold">Muhammad Aftab Hussain</h1>
+    <p class="text-xl mt-2">Wordpress Developer | My Projects Showcase</p>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-6xl mx-auto mt-12 bg-white shadow-lg rounded-2xl p-10">
+
+    <!-- 🔙 Back to Projects Button -->
+    <a href="index.html" class="mb-6 inline-flex items-center text-indigo-600 hover:text-indigo-800 font-medium transition-colors duration-200">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+      Back to Projects
+    </a>
+
+    <!-- Project Description -->
+    <h2 class="text-3xl font-bold mb-4">Company Profile Website: Website: riayatech.ae</h2>
+    <p class="text-gray-600 mb-6">
+      Developed a professional company profile website for Riaya Tech, a UAE-based healthcare software provider. 
+		The website highlights their core products and services, including EHR systems, telemedicine, 
+		and AI-driven hospital solutions. Focused on clean UI/UX, mobile responsiveness, performance optimization, 
+		and search engine visibility. Built using WordPress and Elementor, with custom sections for services, team, 
+		and contact forms.
+    </p>
+
+    <!-- Tags -->
+    <div class="flex flex-wrap gap-2 mb-6">
+      <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full font-medium">WordPress</span>
+      <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full font-medium">Elementor</span>
+      <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full font-medium">Corporate Website</span>
+      <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full font-medium">SEO Optimization</span>
+    </div>
+
+    <!-- Screenshots Grid -->
+    <h3 class="text-xl font-semibold mb-4 text-gray-800">Project Screenshots</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Screenshot Card 1 -->
+      <div class="overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
+        <img 
+          src="riayatech-image/1.png" 
+          alt="Home Page" 
+          class="zoom-image w-full h-64 object-cover rounded-xl cursor-pointer"
+          onclick="openModal(this.src)" />
+        <h3 class="text-center text-sm font-semibold text-gray-700 mt-2">
+          Home Page
+        </h3>
+      </div>
+
+      <!-- Screenshot Card 2 -->
+      <div class="overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
+        <img 
+          src="riayatech-image/about.png" 
+          alt="Dashboard" 
+          class="zoom-image w-full h-64 object-cover rounded-xl cursor-pointer"
+          onclick="openModal(this.src)" />
+        <h3 class="text-center text-sm font-semibold text-gray-700 mt-2">
+          About Us
+        </h3>
+      </div>
+
+      <!-- Screenshot Card 3 -->
+      <div class="overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
+        <img 
+          src="riayatech-image/blogs.png" 
+          alt="blogs Page" 
+          class="zoom-image w-full h-64 object-cover rounded-xl cursor-pointer"
+          onclick="openModal(this.src)" />
+        <h3 class="text-center text-sm font-semibold text-gray-700 mt-2">
+          Blogs
+        </h3>
+      </div>
+	  <!-- Screenshot Card 3 -->
+      <div class="overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
+        <img 
+          src="riayatech-image/cms.png" 
+          alt="Clinical Management Software Page" 
+          class="zoom-image w-full h-64 object-cover rounded-xl cursor-pointer"
+          onclick="openModal(this.src)" />
+        <h3 class="text-center text-sm font-semibold text-gray-700 mt-2">
+          Clinical Management Software
+        </h3>
+      </div>
+	  <!-- Screenshot Card 3 -->
+      <div class="overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
+        <img 
+          src="riayatech-image/lis.png" 
+          alt="Reports Page" 
+          class="zoom-image w-full h-64 object-cover rounded-xl cursor-pointer"
+          onclick="openModal(this.src)" />
+        <h3 class="text-center text-sm font-semibold text-gray-700 mt-2">
+          Laboratory Information System
+        </h3>
+      </div>
+	  <!-- Screenshot Card 3 -->
+      <div class="overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
+        <img 
+          src="riayatech-image/pis.png" 
+          alt="Pharmacy Information System" 
+          class="zoom-image w-full h-64 object-cover rounded-xl cursor-pointer"
+          onclick="openModal(this.src)" />
+        <h3 class="text-center text-sm font-semibold text-gray-700 mt-2">
+          Pharmacy Information System
+        </h3>
+      </div>
+	  <!-- Screenshot Card 3 -->
+      <div class="overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
+        <img 
+          src="riayatech-image/ris.png" 
+          alt="Radiology Information System" 
+          class="zoom-image w-full h-64 object-cover rounded-xl cursor-pointer"
+          onclick="openModal(this.src)" />
+        <h3 class="text-center text-sm font-semibold text-gray-700 mt-2">
+          Radiology Information System
+        </h3>
+      </div>
+	  <!-- Screenshot Card 3 -->
+      <div class="overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
+        <img 
+          src="riayatech-image/PACS.png" 
+          alt="Picture Archiving & Communication System (PACS)" 
+          class="zoom-image w-full h-64 object-cover rounded-xl cursor-pointer"
+          onclick="openModal(this.src)" />
+        <h3 class="text-center text-sm font-semibold text-gray-700 mt-2">
+          Picture Archiving & Communication System (PACS)
+        </h3>
+      </div>
+	  <!-- Screenshot Card 3 -->
+      <div class="overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
+        <img 
+          src="riayatech-image/Occupational Health & Safety Solutions.png" 
+          alt="Occupational Health & Safety Solutions" 
+          class="zoom-image w-full h-64 object-cover rounded-xl cursor-pointer"
+          onclick="openModal(this.src)" />
+        <h3 class="text-center text-sm font-semibold text-gray-700 mt-2">
+          Occupational Health & Safety Solutions
+        </h3>
+      </div>
+	  <!-- Screenshot Card 3 -->
+      <div class="overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
+        <img 
+          src="riayatech-image/hhs.png" 
+          alt="Home Health Management System" 
+          class="zoom-image w-full h-64 object-cover rounded-xl cursor-pointer"
+          onclick="openModal(this.src)" />
+        <h3 class="text-center text-sm font-semibold text-gray-700 mt-2">
+          Home Health Management System
+        </h3>
+      </div>
+	  <!-- Screenshot Card 3 -->
+      <div class="overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
+        <img 
+          src="riayatech-image/gamca.png" 
+          alt="GAMCA Medical Software" 
+          class="zoom-image w-full h-64 object-cover rounded-xl cursor-pointer"
+          onclick="openModal(this.src)" />
+        <h3 class="text-center text-sm font-semibold text-gray-700 mt-2">
+          GAMCA Medical Software
+        </h3>
+      </div>
+	  <!-- Screenshot Card 3 -->
+      <div class="overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
+        <img 
+          src="riayatech-image/emr.png" 
+          alt="Health TechHIS / EMR" 
+          class="zoom-image w-full h-64 object-cover rounded-xl cursor-pointer"
+          onclick="openModal(this.src)" />
+        <h3 class="text-center text-sm font-semibold text-gray-700 mt-2">
+          Health TechHIS / EMR
+        </h3>
+      </div>
+	  <!-- Screenshot Card 3 -->
+      <div class="overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
+        <img 
+          src="riayatech-image/mobile-app.png" 
+          alt="Mobile App Development" 
+          class="zoom-image w-full h-64 object-cover rounded-xl cursor-pointer"
+          onclick="openModal(this.src)" />
+        <h3 class="text-center text-sm font-semibold text-gray-700 mt-2">
+          Mobile App Development
+        </h3>
+      </div>
+	  <!-- Screenshot Card 3 -->
+      <div class="overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
+        <img 
+          src="riayatech-image/web-development.png" 
+          alt="Website Design & Development" 
+          class="zoom-image w-full h-64 object-cover rounded-xl cursor-pointer"
+          onclick="openModal(this.src)" />
+        <h3 class="text-center text-sm font-semibold text-gray-700 mt-2">
+          Website Design & Development
+        </h3>
+      </div>
+	  <!-- Screenshot Card 3 -->
+      <div class="overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
+        <img 
+          src="riayatech-image/digital-markeeting.png" 
+          alt="Digital Growth & Marketing" 
+          class="zoom-image w-full h-64 object-cover rounded-xl cursor-pointer"
+          onclick="openModal(this.src)" />
+        <h3 class="text-center text-sm font-semibold text-gray-700 mt-2">
+          Digital Growth & Marketing
+        </h3>
+      </div>
+	  <!-- Screenshot Card 3 -->
+      <div class="overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
+        <img 
+          src="riayatech-image/digital-transformation.png" 
+          alt="Digital Transformation Consultation" 
+          class="zoom-image w-full h-64 object-cover rounded-xl cursor-pointer"
+          onclick="openModal(this.src)" />
+        <h3 class="text-center text-sm font-semibold text-gray-700 mt-2">
+          Digital Transformation Consultation
+        </h3>
+      </div>
+	  <!-- Screenshot Card 3 -->
+      <div class="overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
+        <img 
+          src="riayatech-image/custom.png" 
+          alt="Custom Software Development" 
+          class="zoom-image w-full h-64 object-cover rounded-xl cursor-pointer"
+          onclick="openModal(this.src)" />
+        <h3 class="text-center text-sm font-semibold text-gray-700 mt-2">
+          Custom Software Development
+        </h3>
+      </div>
+	  <!-- Screenshot Card 3 -->
+      <div class="overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
+        <img 
+          src="riayatech-image/tsm.png" 
+          alt="Technical Support and Maintenance" 
+          class="zoom-image w-full h-64 object-cover rounded-xl cursor-pointer"
+          onclick="openModal(this.src)" />
+        <h3 class="text-center text-sm font-semibold text-gray-700 mt-2">
+          Technical Support and Maintenance
+        </h3>
+      </div>
+	  <!-- Screenshot Card 3 -->
+      <div class="overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
+        <img 
+          src="riayatech-image/mega.png" 
+          alt="mega" 
+          class="zoom-image w-full h-64 object-cover rounded-xl cursor-pointer"
+          onclick="openModal(this.src)" />
+        <h3 class="text-center text-sm font-semibold text-gray-700 mt-2">
+          Products Mega Menu
+        </h3>
+      </div>
+	  <!-- Screenshot Card 3 -->
+      <div class="overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
+        <img 
+          src="riayatech-image/mega-services.png" 
+          alt="mega-services" 
+          class="zoom-image w-full h-64 object-cover rounded-xl cursor-pointer"
+          onclick="openModal(this.src)" />
+        <h3 class="text-center text-sm font-semibold text-gray-700 mt-2">
+          Services Mega Menu
+        </h3>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Modal Viewer with Zoom and Scroll -->
+  <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 overflow-auto hidden">
+    <span onclick="closeModal()" class="absolute top-6 right-8 text-white text-4xl cursor-pointer z-50">&times;</span>
+    <div class="max-w-full max-h-full p-4 overflow-auto">
+      <img id="modalImage"
+           class="rounded-lg shadow-2xl transition-transform duration-300 ease-in-out"
+           style="max-width: 100%; height: auto; cursor: zoom-in;"
+           onclick="toggleZoom(this)" />
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center mt-16 py-6 bg-gray-900 text-white rounded-t-xl">
+    <p>Connect with me on LinkedIn: <a href="http://linkedin.com/in/muhammad-aftab-hussain" class="underline">Muhammad Aftab Hussain</a></p>
+    <p>Email: aftabfuuast4@gmail.com</p>
+  </footer>
+
+  <!-- JavaScript for Modal and Zoom -->
+  <script>
+    function openModal(src) {
+      const modal = document.getElementById("imageModal");
+      const image = document.getElementById("modalImage");
+      image.src = src;
+      image.style.transform = "scale(1)";
+      image.style.cursor = "zoom-in";
+      isZoomed = false;
+      modal.classList.remove("hidden");
+    }
+
+    function closeModal() {
+      document.getElementById("imageModal").classList.add("hidden");
+    }
+
+    let isZoomed = false;
+    function toggleZoom(img) {
+      isZoomed = !isZoomed;
+      if (isZoomed) {
+        img.style.transform = "scale(2)";
+        img.style.cursor = "zoom-out";
+      } else {
+        img.style.transform = "scale(1)";
+        img.style.cursor = "zoom-in";
+      }
+    }
+  </script>
+
+</body>
+</html>

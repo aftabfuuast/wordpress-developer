@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Muhammad Aftab Hussain - WordPress Projects</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .zoom-image {
+      transition: transform 0.3s ease;
+    }
+    .zoom-image:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-indigo-600 py-16 text-center text-white rounded-b-3xl">
+    <h1 class="text-5xl font-bold">Muhammad Aftab Hussain</h1>
+    <p class="text-xl mt-2">Wordpress Developer | My Projects Showcase</p>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-6xl mx-auto mt-12 bg-white shadow-lg rounded-2xl p-10">
+
+    <!-- 🔙 Back to Projects Button -->
+    <a href="index.html" class="mb-6 inline-flex items-center text-indigo-600 hover:text-indigo-800 font-medium transition-colors duration-200">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+      Back to Projects
+    </a>
+
+    <!-- Project Description -->
+    <h2 class="text-3xl font-bold mb-4">Footland – Online Footwear Store</h2>
+    <p class="text-gray-600 mb-6">
+		Developed a modern and responsive e-commerce website for Footland, a Pakistani footwear brand. 
+		The site features organized product categories for men, women, and kids, integrated secure checkout, 
+		and promotional tools like free shipping. Built with WordPress and WooCommerce, optimized for performance, 
+		SEO, and mobile devices to enhance the shopping experience.
+    </p>
+
+    <!-- Tags -->
+    <div class="flex flex-wrap gap-2 mb-6">
+		<span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full font-medium">WooCommerce</span>
+        <span class="bg-red-100 text-red-700 px-3 py-1 rounded-full font-medium">E-commerce</span>
+        <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full font-medium">Responsive Design</span>
+        <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full font-medium">SEO Optimization</span>
+    </div>
+
+    <!-- Screenshots Grid -->
+    <h3 class="text-xl font-semibold mb-4 text-gray-800">Project Screenshots</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Screenshot Card 1 -->
+      <div class="overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
+        <img 
+          src="footland-images/home.png" 
+          alt="Home Page" 
+          class="zoom-image w-full h-64 object-cover rounded-xl cursor-pointer"
+          onclick="openModal(this.src)" />
+        <h3 class="text-center text-sm font-semibold text-gray-700 mt-2">
+          Home Page
+        </h3>
+      </div>
+
+      <!-- Screenshot Card 2 -->
+      <div class="overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
+        <img 
+          src="footland-images/about.png" 
+          alt="Dashboard" 
+          class="zoom-image w-full h-64 object-cover rounded-xl cursor-pointer"
+          onclick="openModal(this.src)" />
+        <h3 class="text-center text-sm font-semibold text-gray-700 mt-2">
+          About Us Page
+        </h3>
+      </div>
+
+      <!-- Screenshot Card 3 -->
+      <div class="overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
+        <img 
+          src="footland-images/shop.png"
+          alt="shop Page" 
+          class="zoom-image w-full h-64 object-cover rounded-xl cursor-pointer"
+          onclick="openModal(this.src)" />
+        <h3 class="text-center text-sm font-semibold text-gray-700 mt-2">
+          Shop Page
+        </h3>
+      </div>
+	  <!-- Screenshot Card 3 -->
+      <div class="overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
+        <img 
+          src="footland-images/contact.png" 
+          alt="contact" 
+          class="zoom-image w-full h-64 object-cover rounded-xl cursor-pointer"
+          onclick="openModal(this.src)" />
+        <h3 class="text-center text-sm font-semibold text-gray-700 mt-2">
+          Contact Page
+        </h3>
+      </div>
+    </div>
+  </main>
+
+  <!-- Modal Viewer with Zoom and Scroll -->
+  <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 overflow-auto hidden">
+    <span onclick="closeModal()" class="absolute top-6 right-8 text-white text-4xl cursor-pointer z-50">&times;</span>
+    <div class="max-w-full max-h-full p-4 overflow-auto">
+      <img id="modalImage"
+           class="rounded-lg shadow-2xl transition-transform duration-300 ease-in-out"
+           style="max-width: 100%; height: auto; cursor: zoom-in;"
+           onclick="toggleZoom(this)" />
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center mt-16 py-6 bg-gray-900 text-white rounded-t-xl">
+    <p>Connect with me on LinkedIn: <a href="http://linkedin.com/in/muhammad-aftab-hussain" class="underline">Muhammad Aftab Hussain</a></p>
+    <p>Email: aftabfuuast4@gmail.com</p>
+  </footer>
+
+  <!-- JavaScript for Modal and Zoom -->
+  <script>
+    function openModal(src) {
+      const modal = document.getElementById("imageModal");
+      const image = document.getElementById("modalImage");
+      image.src = src;
+      image.style.transform = "scale(1)";
+      image.style.cursor = "zoom-in";
+      isZoomed = false;
+      modal.classList.remove("hidden");
+    }
+
+    function closeModal() {
+      document.getElementById("imageModal").classList.add("hidden");
+    }
+
+    let isZoomed = false;
+    function toggleZoom(img) {
+      isZoomed = !isZoomed;
+      if (isZoomed) {
+        img.style.transform = "scale(2)";
+        img.style.cursor = "zoom-out";
+      } else {
+        img.style.transform = "scale(1)";
+        img.style.cursor = "zoom-in";
+      }
+    }
+  </script>
+
+</body>
+</html>
